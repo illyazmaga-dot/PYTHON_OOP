@@ -16,12 +16,12 @@ class Student:
 
     def to_study(self):
         print("Time to study")
-        self.progress += 0.12
+        self.progress += 0.15
         self.gladness -= 5
 
     def to_sleep(self):
         print("I will sleep")
-        self.gladness += 3
+        self.gladness += 4
 
     def to_chill(self):
         print("Rest time")
@@ -70,7 +70,7 @@ class Student:
         print("Hello. My name {}. My height is {}".format(self.name, self.height))
         print(f"Hello. My name {self.name}. My height is {self.height}")
 
-
+'''
 first_student = Student()
 print(first_student.height)
 second_student = Student("Алекс", 171)
@@ -83,9 +83,11 @@ a = int("5")
 b = bool(77)
 print(bool(second_student))
 print(int(second_student)+150)
+'''
 
+alex = Student("Alex", 177)
 
 for day in range(365):
-    if second_student.alive == False:
+    if not alex.alive:
         break
-    second_student.live(day)
+    alex.live(day)
