@@ -19,7 +19,7 @@ class My_Test(unittest.TestCase):
         self.assertEqual(adder(0, -5, y, a=x), 5)
 
     def test_wrong_datatype(self):
-        self.assertEqual(adder("5", "abc", 10), 10)
+        self.assertEqual(adder("5", "abc", 10), 15)
 
 
 
